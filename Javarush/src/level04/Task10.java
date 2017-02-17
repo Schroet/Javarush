@@ -9,10 +9,21 @@ public class Task10 {
 
 	    public static void checkInterval(int a) {
 	        
-	        if (a < 50 || a > 100) {
+	        if (a < 50) {
 	            
-	            System.out.println("Число " + 112 + "не содержится в интервале.");
+	            System.out.println("Число " + a + " не содержится в интервале.");
 	        }
+	        
+	        else if ( a > 100 ) {
+	        	
+	        	System.out.println("Число " + a + " не содержится в интервале.");
+	        }
+	        
+            else if ( a >= 50 && a <=100 ) {
+	        	
+	        	System.out.println("Число " + a + " содержится в интервале.");
+	        }
+	        
 	        //::CODE:
 	    }
 	}
