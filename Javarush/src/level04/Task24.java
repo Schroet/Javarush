@@ -7,55 +7,42 @@ public class Task24 {
 	
     public static void main(String[] args) throws Exception {
     	
-    /*Давайте напишем программу, в которой пользователь вводит три числа с клавиатуры. 
-    * Затем происходит сравнение, и если мы находим число, которое отличается от двух других, 
-    * выводим на экран его порядковый номер.	
+    /*Р”Р°РІР°Р№С‚Рµ РЅР°РїРёС€РµРј РїСЂРѕРіСЂР°РјРјСѓ, РІ РєРѕС‚РѕСЂРѕР№ РїРѕР»СЊР·РѕРІР°С‚РµР»СЊ РІРІРѕРґРёС‚ С‚СЂРё С‡РёСЃР»Р° СЃ РєР»Р°РІРёР°С‚СѓСЂС‹. 
+     * Р—Р°С‚РµРј РїСЂРѕРёСЃС…РѕРґРёС‚ СЃСЂР°РІРЅРµРЅРёРµ, Рё РµСЃР»Рё РјС‹ РЅР°С…РѕРґРёРј С‡РёСЃР»Рѕ, РєРѕС‚РѕСЂРѕРµ РѕС‚Р»РёС‡Р°РµС‚СЃСЏ РѕС‚ РґРІСѓС… РґСЂСѓРіРёС…, 
+     * РІС‹РІРѕРґРёРј РЅР° СЌРєСЂР°РЅ РµРіРѕ РїРѕСЂСЏРґРєРѕРІС‹Р№ РЅРѕРјРµСЂ.
     */
     	
     	 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	      int a = Integer.parseInt(br.readLine());
 	      int b = Integer.parseInt(br.readLine());
 	      int c = Integer.parseInt(br.readLine());
+
 	      
-	      int k = (a + b) - c*2;
-	      int m = a - b;
-	      int n = a - c;
-	      int r = b - c;
-	      
-	      
-	      
-		  if (k != 0 ) {
+		  if (a == b && c != b) {
 			  
-			  System.out.println(a + " " + b + " " + c);      
+			  System.out.println(3); 
 		  }
 		  
-		  else if (n == 0) {
+          else if (a == c && b != c) {
 			  
-			  System.out.println(a + " " + c); 
+			  System.out.println(2); 
+          }
+		  
+          else if (b == c && a != b) {
+			  
+        	  System.out.println(1); 
+          }
+		  
+    /*    else if (a == b && a ==c && a == c ) {
+			  
+			  System.out.println("Р§РёСЃР»Р° СЂР°РІРЅС‹");
 		  }
 		  
-          else if (r == 0) {
+         else if (a != b && a !=c && a != c ) {
 			  
-			  System.out.println(b + " " + c); 
-          }
-		  
-          else if (m == 0 ) {
-			  
-        	  System.out.println(a + " " + b); 
-          }
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-        //напишите тут ваш код
+			  System.out.println("Р§РёСЃР»Р° РЅРµ СЂР°РІРЅС‹"); 
+		  }
+*/
+
     }
 }
